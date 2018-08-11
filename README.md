@@ -1,1 +1,1 @@
-"# parkit" 
+# parkit  - Cordova demo application

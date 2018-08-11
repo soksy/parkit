@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Park It</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="parkit.css">
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrtvOsq-bZrH1YjdL2vbnA1R0SobakZq4"></script>
+        <script type="text/javascript" src="parkit.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+    </head>
+    <body onload="init()">
+        <div id="navbar">
+            <button id="park" onClick="setParkingLocation()">Park</button>
+            Park It
+            <button id="retrieve" onClick="getParkingLocation()">Find</button>
+        </div>
+        <div id="container">
+            <div id="instructions">
+                <p>Click the park button to set the parking location</p>
+                <p>Click the find button to retrieve the parking location</p>
+                <p style="text-align: center"><button id="gotIt" onclick="setCss('instructions', 'display', 'none')">Got It</button>
+            </div>
+            <div id="map">
+                
+            </div>
+            <div id="directions">
+                
+            </div>
+        </div>  
+    </body>
+</html>
